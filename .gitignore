@@ -3,4 +3,4 @@
 
 ### Vagrant ###
 .vagrant/
-docs/build
+site/
