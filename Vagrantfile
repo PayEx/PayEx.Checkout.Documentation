@@ -18,6 +18,7 @@ Vagrant.configure(2) do |config|
     apt-get -y install python-pip
     apt-get -y install make
     pip install sphinx
+    pip install recommonmark
   EOT
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
