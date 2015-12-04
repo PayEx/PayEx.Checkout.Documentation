@@ -1,5 +1,6 @@
 # Payex Checkout Documentation
 
+![read the docs build](https://readthedocs.org/projects/payex-checkout/badge/?version=latest)
 ## Source for http://payex-checkout.readthedocs.org/
 
 ### How to contribute:
