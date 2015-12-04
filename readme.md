@@ -1,7 +1,7 @@
 # Payex Checkout Documentation
 
 ![read the docs build](https://readthedocs.org/projects/payex-checkout/badge/?version=latest)
-## Source for http://payex-checkout.readthedocs.org/
+## Source for [the documentation hosted on Read the Docs](http://payex-checkout.readthedocs.org/)
 
 ### How to contribute:
 * Fork this repo
