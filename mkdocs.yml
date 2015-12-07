@@ -2,4 +2,7 @@ site_name : Payex Checkout
 theme : readthedocs
 pages :
 - Home : index.md
-- Server resources : e2e.md
+- Server resources :
+   - Address.md
+   - Capture.md
+   - Cancel.md
