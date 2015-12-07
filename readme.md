@@ -17,7 +17,7 @@ This boots up a VM, gets the needed dependencies (listed in the native step belo
 * `vagrant ssh`
 * `cd /vagrant/docs`
 * `mkdocs build`
-* The documentation will be created in the /vagrant/site directory on your host machine.
+* The documentation will be created in the /site directory on your host machine.
 
 #### Native
 * Install `python` and `python-pip`
