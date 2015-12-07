@@ -1,4 +1,3 @@
-## Address
 An implementer may use this endpoint to obtain the delivery address of the order.
 It is expected that the item is being sent to this address, if the implementer have initiated the transaction with the property `requiresDigitalAddress` or `requiresPhysicalAddress` set to true.
 
