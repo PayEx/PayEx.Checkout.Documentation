@@ -5,7 +5,7 @@
 
 ### How to contribute:
 * Fork this repo
-* Contribute new `.md` files, or update existing ones cohering to the [MkDocs](http://www.mkdocs.org/) style.
+* Contribute new `.md` files, or update existing ones cohering to the [MkDocs](http://www.mkdocs.org/user-guide/writing-your-docs/#writing-your-docs) style.
 * Create a pull-request for your changes.
 * When merged, [Read The Docs](https://readthedocs.org/) will build and publish the new documentation.
 
