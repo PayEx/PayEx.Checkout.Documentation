@@ -1,2 +1,5 @@
-site_name: Payex Checkout
-theme: readthedocs
+site_name : Payex Checkout
+theme : readthedocs
+pages :
+- Home : index.md
+- Server resources : e2e.md
