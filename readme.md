@@ -10,17 +10,18 @@
 * When merged, [Read The Docs](https://readthedocs.org/) will build and publish the new documentation.
 
 ### Build the documentation locally:
-#### With vagrant
-Not so intrusive. (and chosen by the main developer)
-* Install [Vagrant](https://www.vagrantup.com/) and use `vagrant up` in the root directory.
-This boots up a VM, gets the needed dependencies (listed in the native step below) and maps the VMs `/vagrant` to the root of the repository
-* `vagrant ssh`
-* `cd /vagrant/docs`
-* `mkdocs build`
-* The documentation will be created in the /site directory on your host machine.
 
 #### Native
 * Install `python` and `python-pip`
 * Install mkdocs with `pip install mkdocs`
 * Run `mkdocs build` from the root directory.
 * The documentation will be created in the /site directory of the repository.
+* Use `mkdocs serve` and browse to http://localhost:8000 to see the site.
+
+#### With vagrant
+* Install [Vagrant](https://www.vagrantup.com/) and use `vagrant up` in the root directory.
+This boots up a VM, gets the needed dependencies (listed in the native step below) and maps the VMs `/vagrant` to the root of the repository
+* `vagrant ssh`
+* `cd /vagrant/docs`
+* `mkdocs build`
+* The documentation will be created in the /site directory on your host machine.
