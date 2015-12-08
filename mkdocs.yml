@@ -4,9 +4,9 @@ pages :
 - Home : index.md
 - Authentication : authentication.md
 - Server resources :
-   - Address.md
-   - Capture.md
-   - Cancel.md
+  - Address : Address.md
+  - Capture : Capture.md
+  - Cancel : Cancel.md
 - Frontend :
-   - Getting started : gettingStarted.md
-   - Configuration reference : configurationReference.md
+  - Getting started : gettingStarted.md
+  - Configuration reference : configurationReference.md
