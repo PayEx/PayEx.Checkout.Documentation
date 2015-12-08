@@ -12,9 +12,9 @@ Headers:
 
 Body:
 
-    {"PaymentToken":"bbe947b5-0150-465a-a153-ec5bf99f888d"}
+    {"paymentToken":"bbe947b5-0150-465a-a153-ec5bf99f888d"}
 
-The PaymentToken here is the token your purchase-endpoint is receiving from checkout.js
+The `paymentToken` here is the token your purchase-endpoint is receiving from checkout.js
 
 ### Expected responses
 

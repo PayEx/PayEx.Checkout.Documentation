@@ -3,9 +3,10 @@ It is expected that the item is being sent to this address, if the implementer h
 
 ### Method, parameters
 
-    GET /address?orderid=your-order-token
+    GET /address?paymenttoken=your-order-token
     Authorization: Token your-token    
     Accept: application/json
+Where the value of the query parameter `paymenttoken` is the token your purchase-endpoint is receiving from checkout.js
 
 ### Example response
     {

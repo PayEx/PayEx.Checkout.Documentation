@@ -12,8 +12,8 @@ Headers:
 
 Body:
 
-    {"PaymentToken":"bbe947b5-0150-465a-a153-ec5bf99f888d","TotalAmount":199}
-The PaymentToken here is the token your purchase-endpoint is receiving from checkout.js
+    {"paymentToken":"bbe947b5-0150-465a-a153-ec5bf99f888d","totalAmount":199}
+The `paymentToken` is the token your purchase-endpoint is receiving from checkout.js
 
 ### Expected responses
 Status code:
