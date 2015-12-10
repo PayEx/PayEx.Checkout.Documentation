@@ -1,3 +1,3 @@
 # Welcome to Payex Checkout
 
-The quick and easy way to add payments to your shop.
+**This service is in private beta and currently not available to the general public.**

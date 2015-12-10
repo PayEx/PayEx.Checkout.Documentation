@@ -1,5 +1,7 @@
 # Payex Checkout Documentation
 
+**This service is in private beta and currently not available to the general public.**
+
 ![read the docs build](https://readthedocs.org/projects/payex-checkout/badge/?version=latest)
 ## Source for [the documentation hosted on Read the Docs](http://payex-checkout.readthedocs.org/)
 
