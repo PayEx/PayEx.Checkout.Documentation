@@ -2,7 +2,7 @@
 
 This repository contains the source code for [the documentation of PayEx Checkout](http://payex-checkout.readthedocs.org/).
 
-**The PayEx Checkout service is in private beta and currently not available to the general public.**
+**The PayEx Checkout service is in private beta and is currently not available to the general public.**
 
 ![read the docs build](https://readthedocs.org/projects/payex-checkout/badge/?version=latest)
 
