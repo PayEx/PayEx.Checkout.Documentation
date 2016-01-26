@@ -1,4 +1,4 @@
-An implementer may request a new capture-transaction. This captures any authorized funds from the transaction.
+An implementer may request a new credit-transaction. This can credit any captured funds from the order.
 
 ### Method, parameters
 Method:    `POST`
@@ -13,21 +13,16 @@ Headers:
 Body:
 
     {
-      "transaction-type" : "Capture"
+      "transaction-type" : "Credit"
       "transaction-amount" {amount}
     }
 
 Where `orderid` is the token your purchase-endpoint is receiving from checkout.js
 
-Where `amount` is the amount to capture. Must not exceed remaining authorized amount.
+Where `amount` is the amount to be credited. Must not exceed the total of all captures on the order.
 
 ### Expected responses
 Status code: `201`
-
-Body:
-
-    {"reference":"8135598"}
-The reference is the ID of the transaction that can be used inside Payex Admin to do more actions on the order.
 
 ### Possible errors
 `404 Not Found` :
@@ -35,5 +30,4 @@ The reference is the ID of the transaction that can be used inside Payex Admin t
 
 `403 Bad Request`
  * When the request is malformed
- * When the transaction-amount exceeds remaining authorized amount
- * when the order is not completed
+ * When the transaction-amount exceeds the captured amount

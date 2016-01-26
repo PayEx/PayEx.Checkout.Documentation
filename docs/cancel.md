@@ -1,9 +1,9 @@
-An implementer may call /cancel to cancel the transaction and release any reserved funds
+An implementer may request a cancel-transaction to cancel the transaction and release any reserved funds
 
 ### Method, parameters
 Method:    `POST`
 
-Endpoint:  `/api/cancel`
+Resource:  `api/orders/{orderid}/transactions/`
 
 Headers:
 
@@ -12,24 +12,23 @@ Headers:
 
 Body:
 
-    {"paymentToken":"bbe947b5-0150-465a-a153-ec5bf99f888d"}
+    {
+      "transaction-type" : "Cancel"
+      "transaction-amount" {amount}
+    }
 
-The `paymentToken` here is the token your purchase-endpoint is receiving from checkout.js
+Where `orderid` is the token your purchase-endpoint is receiving from checkout.js
+
+Where `amount` is the amount to release. Must not exceed the remaining authorized amount on the order.
 
 ### Expected responses
 
-Status code:
-
-    200
+Status code: `201`
 
 ### Possible errors
 `404 Not Found` :
  * When the order is not found in the system
 
-`410 Gone` :
-* When the order is already captured
-* When the order is already cancelled
-
 `403 Bad Request`
-* When the cancel request is malformed
-* When the order attempted cancelled is not in a cancellable state.
+* When the request is malformed
+* When the transaction-amount exceeds remaining authorized amount

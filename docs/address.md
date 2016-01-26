@@ -1,12 +1,17 @@
-An implementer may use this endpoint to obtain the delivery address of the order.
-It is expected that the item is being sent to this address, if the implementer have initiated the transaction with the property `requiresDigitalAddress` or `requiresPhysicalAddress` set to true.
+An implementer may request this resource to obtain the delivery address of the order.
+It is expected that the item(s) purchased is being sent to this address, if the implementer have initiated the transaction with the property `requiresDigitalAddress` or `requiresPhysicalAddress` set to true.
 
 ### Method, parameters
+Method:    `GET`
 
-    GET /address?paymenttoken=your-order-token
-    Authorization: Token your-token    
+Resource:  `api/orders/{orderid}/address`
+
+Headers:
+
+    Authorization: Token M2EwNWFkZjgtNGFhMy00ZGYyLWIzOWMtYmVkNmY2YTc1YTdkOjQ0Mzg5MgdlLTQ1NDktNGMxOC05Mjk5LTkyZjMxY2VhYTllNw    
     Accept: application/json
-Where the value of the query parameter `paymenttoken` is the token your purchase-endpoint is receiving from checkout.js
+
+Where `orderid` is the token your purchase-endpoint is receiving from checkout.js
 
 ### Example response
     {

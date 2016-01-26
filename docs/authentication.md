@@ -17,6 +17,8 @@ Any requests without the correct authentication will result in a `401` response 
 This scope is used by your back end code to do secure request against our server to server endpoints.
 The authentication is done in a similar way, but the token used is secret. If it is lost, we can not retrieve it for you, and you need to issue a new one from our admin.
 
-    Authorization: Token YzNiMDA0MTctNjkwNS00MDMzLWFhMjEtYzc2NjZmYTU3MjMwOjk2MWFhNjhkLTkxYzAtNGJkZS1hYjY4LWFiYmZkMmIxMDM5OA==
+    Authorization: Token M2EwNWFkZjgtNGFhMy00ZGYyLWIzOWMtYmVkNmY2YTc1YTdkOjQ0Mzg5MgdlLTQ1NDktNGMxOC05Mjk5LTkyZjMxY2VhYTllNw
 
 Any requests without the correct authentication will result in a `401` response from us.
+
+For examples we use the above Token.

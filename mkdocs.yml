@@ -3,10 +3,11 @@ theme : readthedocs
 pages :
 - Home : index.md
 - Authentication : authentication.md
+- Frontend :
+  - Getting started : gettingStarted.md
+  - Configuration reference : configurationReference.md
 - Server resources :
   - Address : address.md
   - Capture : capture.md
   - Cancel : cancel.md
-- Frontend :
-  - Getting started : gettingStarted.md
-  - Configuration reference : configurationReference.md
+  - Credit : credit.md
