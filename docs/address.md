@@ -14,6 +14,10 @@ Headers:
 Where `orderid` is the token your purchase-endpoint is receiving from checkout.js
 
 ### Example response
+Status code: `201`
+
+Body:
+
     {
      "city": "Oslo",
      "coAddress": "C/O Ares coAddress",
@@ -26,3 +30,7 @@ Where `orderid` is the token your purchase-endpoint is receiving from checkout.j
      "postalCode": "3179",
      "streetAddress": "Strandsveien 560"
     }
+
+### Possible errors
+`404 Not Found` :
+ * When the order or the address is not existing.

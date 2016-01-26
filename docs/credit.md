@@ -28,6 +28,6 @@ Status code: `201`
 `404 Not Found` :
  * When the order is not found in the system
 
-`403 Bad Request`
+`400 Bad Request`
  * When the request is malformed
  * When the transaction-amount exceeds the captured amount

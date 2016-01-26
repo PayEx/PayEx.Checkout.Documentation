@@ -33,7 +33,7 @@ The reference is the ID of the transaction that can be used inside Payex Admin t
 `404 Not Found` :
  * When the order is not found in the system
 
-`403 Bad Request`
+`400 Bad Request`
  * When the request is malformed
  * When the transaction-amount exceeds remaining authorized amount
  * when the order is not completed
