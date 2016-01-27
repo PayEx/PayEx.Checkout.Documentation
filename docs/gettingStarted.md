@@ -6,7 +6,7 @@ Start by adding the PayEx Checkout script to your page.
 
 
 ## 2. Initial configuration
-Choose the button you want start checkout process and disabled it, the PayEx checkout will enable it when it is properly loaded.
+Choose the button you want to start checkout process and disable it, the PayEx checkout will enable it when it is properly loaded.
 
     <button disabled>Pay</button>
 
