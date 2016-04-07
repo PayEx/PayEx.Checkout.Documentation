@@ -1,4 +1,3 @@
-## The `transaction` resource.
 An implementer may request this resource to obtain the spesifics of a single transaction in a [payments](../payment)' transaction chain
 
 ### Properties of a transaction

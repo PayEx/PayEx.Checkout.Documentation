@@ -1,36 +1,44 @@
 An implementer may request this resource to obtain the delivery address of the order.
-It is expected that the item(s) purchased is being sent to this address, if the implementer have initiated the transaction with the property `requiresDigitalAddress` or `requiresPhysicalAddress` set to true.
+if the initial order is initiated with [requires-physical-address](../configurationReference/#requires-physical-address) and is paid with _invoice_, any shipping **MUST** be delivered to this address.
 
-### Method, parameters
+### Properties of an address
+ * **uri**
+    * the uri to this one resource.
+* **city**
+    * the city or area where the recipient wants items sendt to.
+* **coAddres**
+
+
+
+
+### Resource URI
+Resource:  `/payments/{paymentId}/address/`, Where `paymentId` is the token recieved from the paymentsession through checkout.js.
+This resource requires authentication, authorizing the owner of the payment. see [Authentication](../authentication/#back-end-authentication)
+
+#### Supported HTTP Verbs
 Method:    `GET`
 
-Resource:  `api/orders/{orderid}/address`
+##### Example request
 
-Headers:
-
-    Authorization: Token M2EwNWFkZjgtNGFhMy00ZGYyLWIzOWMtYmVkNmY2YTc1YTdkOjQ0Mzg5MgdlLTQ1NDktNGMxOC05Mjk5LTkyZjMxY2VhYTllNw    
+    GET scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address HTTP/1.1
     Accept: application/json
+    Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
 
-Where `orderid` is the token your purchase-endpoint is receiving from checkout.js
+##### response:
 
-### Example response
-Status code: `201`
-
-Body:
-
+    HTTP/1.1 200 OK
+    Content-Type: application/json
     {
-     "city": "Oslo",
-     "coAddress": "C/O Ares coAddress",
-     "country": "Norge",
-     "email": "test@example.com",
-     "firstName": "Are",
-     "fullName": "Are Eriksen",
-     "lastName": "Eriksen",
-     "mobilePhoneNumber": "01010101010",
-     "postalCode": "3179",
-     "streetAddress": "Strandsveien 560"
+      "uri": "scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address",
+      "city": "CityTown",
+      "coAddress": null,
+      "country": "Norway",
+      "email": "erik+01@okb.no",
+      "fullName": "Place Holder",
+      "postalCode": "0001",
+      "streetAddress": "The Actual Street 5c"
     }
 
-### Possible errors
-`404 Not Found` :
- * When the order or the address is not existing.
+##### Possible other HTTP status codes
+ * `404 Not Found`
+ * `401 Unauthorized`
