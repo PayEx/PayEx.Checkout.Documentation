@@ -6,8 +6,7 @@ pages :
 - Frontend :
   - Getting started : gettingStarted.md
   - Configuration reference : configurationReference.md
-- Server resources :
+- API reference :
+  - Payment: payment.md
   - Address : address.md
-  - Capture : capture.md
-  - Cancel : cancel.md
-  - Credit : credit.md
+  - Transaction : transaction.md
