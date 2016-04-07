@@ -1,5 +1,11 @@
 site_name : Payex Checkout
 theme : readthedocs
+repo_url : https://github.com/PayEx/Checkout.Documentation
+site_favicon : favicon.png
+# TODO site_url: https://checkout.payex.com
+# TODO site_description: modern payment solution
+site_author : Payex Team User Experience #TODO change
+copyright : Copyright © PayEx. All Rights Reserved.
 pages :
 - Home : index.md
 - Authentication : authentication.md
