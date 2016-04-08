@@ -11,8 +11,6 @@ if the initial order is initiated with [requires-physical-address](configuration
 * **coAddres**
 
 
-
-
 ##4.2.2 Resource URI
 Resource:  `/payments/{paymentId}/address/`, Where `paymentId` is the token recieved from the paymentsession through checkout.js.
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
@@ -22,7 +20,7 @@ Method:    `GET`
 
 ##4.2.2.1.1 Example request
 ```HTTP
-GET scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address HTTP/1.1
+GET scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address HTTP/1.1
 Accept: application/json
 Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
 ```
@@ -31,7 +29,7 @@ Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
 HTTP/1.1 200 OK
 Content-Type: application/json
 {
-  "uri": "scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address",
+  "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address",
   "city": "CityTown",
   "coAddress": null,
   "country": "Norway",

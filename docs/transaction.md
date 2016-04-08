@@ -49,7 +49,7 @@ Method:    `GET`
 ##4.7 Example request and response
 ###4.7.1 Request
 ```HTTP
-GET scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400 HTTP/1.1
+GET scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400 HTTP/1.1
 Accept: application/json
 Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
 ```
@@ -59,7 +59,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {    
-  "uri": "scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+  "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
   "currency": "NOK",
   "amount": 199,
   "type": "Authorize"  
