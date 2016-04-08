@@ -38,22 +38,23 @@ Method:    `GET`
 
 
 ##### Example request
-
-    GET scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400 HTTP/1.1
-    Accept: application/json
-    Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
-
+```HTTP
+GET scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400 HTTP/1.1
+Accept: application/json
+Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
+```
 ##### response:
+```HTTP
+HTTP/1.1 200 OK
+Content-Type: application/json
 
-    HTTP/1.1 200 OK
-    Content-Type: application/json
-    {    
-      "uri": "scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
-      "currency": "NOK",
-      "amount": 199,
-      "type": "Authorize"  
-    }
-
+{    
+  "uri": "scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+  "currency": "NOK",
+  "amount": 199,
+  "type": "Authorize"  
+}
+```
 ##### Possible other HTTP status codes
  * `404 Not Found`
  * `401 Unauthorized`
