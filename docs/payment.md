@@ -6,11 +6,13 @@ This resource's uri is the base uri to request all other resources related to th
 ### Properties of payment
  * **uri**
     * the uri to this one resource.
- * **cancelled**
-    * see [cancel transaction](transaction/#cancel)
+ * **originalAmount**
+    * see [authorize transaction](transaction/#authorize)    
     * `decimal`
-    * the amount that has been cancelled on the payment.
-    * This amount is released from `reserved`    
+    * the amount initially authorized on the payment.
+ * **reserved**    
+    * `decimal`
+    * the amount that is still available for either [capture](transaction/#capture) or [cancel](transaction/#cancel)    
  * **captured**
     * see [capture transaction](transaction/#capture)
     * `decimal`
@@ -20,14 +22,14 @@ This resource's uri is the base uri to request all other resources related to th
     * see [credit transaction](transaction/#credit)
     * `decimal`
     * the amount that has been credited.
- * **originalAmount**
-    * see [authorize transaction](transaction/#authorize)    
+ * **cancelled**
+    * see [cancel transaction](transaction/#cancel)
     * `decimal`
-    * the amount initially authorized on the payment.
- * **currency**
-    * see [transaction currency](transaction/#currency)    
+    * the amount that has been cancelled on the payment.
+    * This amount is released from `reserved`    
+ * **currency**    
     * `NOK` or `SEK`
-    * the currency of all `transactions` and amounts related to this `payment`
+    * the currency used for this `payment`
  * **transactions**
     * ordered list of all [transactions](transaction) executed on the payment.
     * the collection that new [transactions](transaction) are posted.
@@ -58,12 +60,12 @@ Content-Type: application/json
 
 {
   "uri": "scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb",
-  "cancelled": 0,
-  "captured": 199,
-  "credited": 0,
-  "currency": "NOK",
   "originalAmount": 199,
   "reserved": 0,
+  "captured": 199,
+  "credited": 0,
+  "cancelled": 0,
+  "currency": "NOK",  
   "transactions": [
   {
     "uri": "scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
