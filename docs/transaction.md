@@ -31,23 +31,50 @@ the resource is identical to the `transaction` recieved, but without a `uri` pro
 
 Posted transactions can only be of [Types](#transaction-types)  [Capture](#capture), [Credit](#credit) and [Cancel](#cancel).
 
-Resource:  `/payments/{paymentId}/transactions/ Where `paymentId` is the token recieved from the paymentsession through checkout.js.
+Resource:  `/payments/{paymentId}/transactions/` Where `paymentId` is the token recieved from the paymentsession through checkout.js.
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
+
+### FIXME Supported HTTP Verbs
+Method:    `GET`
+
+### FIXME Example request and response for a `capture`
+```HTTP
+POST scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/ HTTP/1.1
+Accept: application/json
+Content-Type: application/json
+Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
+
+{  
+  "amount": 199.00,
+  "type": "Authorize"  
+}
+```
+#### Response
+```HTTP
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{    
+  "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+  "amount": 199,
+  "type": "Authorize"  
+}
+```
 
 ## Retrieving an existing transaction
 An implementer may request this resource to obtain the spesifics of a single transaction in a [payments](payment)' transaction chain
 
-##4.5 Resource URI
+### 4.5 Resource URI
 Resource:  `/payments/{paymentId}/transactions/{transactionId}`, Where `paymentId` is the token recieved from the paymentsession through checkout.js and the `transactionId` is the unique ID for this transaction
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
 
-##4.6 Supported HTTP Verbs
+#### 4.6 Supported HTTP Verbs
 Method:    `GET`
 
-##4.7 Example request and response
-###4.7.1 Request
+###4.7 Example request and response
+####4.7.1 Request
 ```HTTP
 GET scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400 HTTP/1.1
 Accept: application/json
@@ -60,11 +87,10 @@ Content-Type: application/json
 
 {    
   "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
-  "currency": "NOK",
   "amount": 199,
   "type": "Authorize"  
 }
 ```
-###4.7.3 Possible other HTTP status codes
+####4.7.3 Possible other HTTP status codes
  * `404 Not Found`
  * `401 Unauthorized`
