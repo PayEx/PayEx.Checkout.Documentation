@@ -1,4 +1,4 @@
-An implementer may request this resource to obtain the spesifics of a single transaction in a [payments](../payment)' transaction chain
+An implementer may request this resource to obtain the spesifics of a single transaction in a [payments](payment)' transaction chain
 
 ### Properties of a transaction
  * **uri**
@@ -30,7 +30,7 @@ This transaction reserves funds, making them available for [capture](#capture) o
 
 ### Resource URI
 Resource:  `/payments/{paymentId}/transactions/{transactionId}`, Where `paymentId` is the token recieved from the paymentsession through checkout.js and the `transactionId` is the unique ID for this transaction
-This resource requires authentication, authorizing the owner of the payment. see [Authentication](../authentication/#back-end-authentication)
+This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
 
 #### Supported HTTP Verbs

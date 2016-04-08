@@ -7,38 +7,38 @@ This resource's uri is the base uri to request all other resources related to th
  * **uri**
     * the uri to this one resource.
  * **cancelled**
-    * see [cancel transaction](../transaction/#cancel)
+    * see [cancel transaction](transaction/#cancel)
     * `decimal`
     * the amount that has been cancelled on the payment.
     * This amount is released from `reserved`    
  * **captured**
-    * see [capture transaction](../transaction/#capture)
+    * see [capture transaction](transaction/#capture)
     * `decimal`
     * the amount that have been captured.
     * also describes the maximum amount that can be credited.
  * **credited**
-    * see [credit transaction](../transaction/#credit)
+    * see [credit transaction](transaction/#credit)
     * `decimal`
     * the amount that has been credited.
  * **originalAmount**
-    * see [authorize transaction](../transaction/#authorize)    
+    * see [authorize transaction](transaction/#authorize)    
     * `decimal`
     * the amount initially authorized on the payment.
  * **currency**
-    * see [transaction currency](../transaction/#currency)    
+    * see [transaction currency](transaction/#currency)    
     * `NOK` or `SEK`
     * the currency of all `transactions` and amounts related to this `payment`
  * **transactions**
-    * ordered list of all [transactions](../transaction) executed on the payment.
+    * ordered list of all [transactions](transaction) executed on the payment.
  * **address**
-    * link this payments' [address ](../address) resource.
-    * if the initial order is initiated with [requires-physical-address](../configurationReference/#requires-physical-address) and is paid with invoice, any shipping MUST be delivered to this address.
+    * link this payments' [address ](address) resource.
+    * if the initial order is initiated with [requires-physical-address](configurationReference/#requires-physical-address) and is paid with invoice, any shipping MUST be delivered to this address.
 
 
 
 ### Resource URI
 Resource:  `/payments/{paymentId}`, Where `paymentId` is the token recieved from the paymentsession through checkout.js
-This resource requires authentication, authorizing the owner of the payment. see [Authentication](../authentication/#back-end-authentication)
+This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
 #### Supported HTTP Verbs
 Method:    `GET`

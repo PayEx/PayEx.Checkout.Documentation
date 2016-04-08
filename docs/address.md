@@ -1,5 +1,5 @@
 An implementer may request this resource to obtain the delivery address of the order.
-if the initial order is initiated with [requires-physical-address](../configurationReference/#requires-physical-address) and is paid with _invoice_, any shipping **MUST** be delivered to this address.
+if the initial order is initiated with [requires-physical-address](configurationReference/#requires-physical-address) and is paid with _invoice_, any shipping **MUST** be delivered to this address.
 
 ### Properties of an address
  * **uri**
@@ -13,7 +13,7 @@ if the initial order is initiated with [requires-physical-address](../configurat
 
 ### Resource URI
 Resource:  `/payments/{paymentId}/address/`, Where `paymentId` is the token recieved from the paymentsession through checkout.js.
-This resource requires authentication, authorizing the owner of the payment. see [Authentication](../authentication/#back-end-authentication)
+This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
 #### Supported HTTP Verbs
 Method:    `GET`
