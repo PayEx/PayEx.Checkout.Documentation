@@ -1,17 +1,16 @@
 #3.2 Configuration reference
 ##3.2.1 Defaults
-
-    {
-        buttonSelector: "#pxc-button",
-		orderId: null,
-		description: null,
-        amount: null,
-        token: null,
-        requiresDigitalAddress: false,
-        requiresPhysicalAddress: false
-     }
-
-
+```JSON
+{
+  buttonSelector: "#pxc-button",
+  orderId: null,
+  description: null,
+  amount: null,
+  token: null,
+  requiresDigitalAddress: false,
+  requiresPhysicalAddress: false
+}
+```
 ##3.2.2 API Token (required)
 In order to authenticate your solution with PayEx Checkout you will need an API token, this token can be found in the PayEx Checkout admin user interface.
 
