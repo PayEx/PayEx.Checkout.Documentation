@@ -12,7 +12,7 @@ pages :
 - Frontend :
   - Getting started : gettingStarted.md
   - Configuration reference : configurationReference.md
-- API reference :
+- Backend :
   - Payment: payment.md
   - Address : address.md
   - Transaction : transaction.md

@@ -3,7 +3,7 @@ As an implementer, your app needs to implement our authentication regime to succ
 There are 2 different scopes that the implementer must care about, however, their implementations are similar.
 
 
-### Front end authentication
+### Frontend authentication
 This scope is used by your front end, and the credentials used are not secret.
 All requests that origins from the front end must carry a header like this:
 
@@ -14,7 +14,7 @@ The tokens are replaceable in our admin interface.
 
 Any requests without the correct authentication will result in a `401` response from us.
 
-### Back end authentication
+### Backend authentication
 This scope is used by your back end code to do secure request against our server to server resources.
 The authentication is done in a similar way, but the token used is secret. If it is lost, we can not retrieve it for you, and you need to issue a new one from our admin.
 
