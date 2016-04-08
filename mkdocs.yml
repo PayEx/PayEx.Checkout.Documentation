@@ -7,12 +7,12 @@ site_favicon : favicon.png
 site_author : Payex Team User Experience #TODO change
 copyright : Copyright © PayEx. All Rights Reserved.
 pages :
-- Home : index.md
-- Authentication : authentication.md
-- Frontend :
-  - Getting started : gettingStarted.md
-  - Configuration reference : configurationReference.md
-- Backend :
-  - Payment: payment.md
-  - Address : address.md
-  - Transaction : transaction.md
+- 1. Home : index.md
+- 2. Authentication : authentication.md
+- 3. Frontend :
+  - 3.1 Getting started : gettingStarted.md
+  - 3.2 Configuration reference : configurationReference.md
+- 4. Backend :
+  - 4.1 Payment: payment.md
+  - 4.2 Address : address.md
+  - 4.3 Transaction : transaction.md

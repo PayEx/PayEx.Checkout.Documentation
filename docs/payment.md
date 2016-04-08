@@ -1,11 +1,12 @@
-## The `payment` resource.
+#4.1 The payment resource.
 An implementer may request this resource to obtain the root resource describing a payment.
-All other resources related to the payment is found on the resource itself, or is linked to from this resource.
-This resource's uri is the base uri to request all other resources related to the payment.
+All other resources related to the payment are found on the resource itself or linked to from this resource.
 
-### Properties of payment
+The uri of this resource is the base uri to request all other resources related to the payment.
+
+##4.1.1 Properties of payment
  * **uri**
-    * the uri to this one resource.
+    * the uri to this resource.
  * **cancelled**
     * see [cancel transaction](../transaction/#cancel)
     * `decimal`
@@ -36,21 +37,21 @@ This resource's uri is the base uri to request all other resources related to th
 
 
 
-### Resource URI
+##4.1.2 Resource URI
 Resource:  `/payments/{paymentId}`, Where `paymentId` is the token recieved from the paymentsession through checkout.js
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](../authentication/#back-end-authentication)
 
-#### Supported HTTP Verbs
+##4.1.2.1 Supported HTTP Verbs
 Method:    `GET`
 
 
-##### Example request
+##4.1.2.1.1 Example request
 
     GET scheme://domain.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb HTTP/1.1
     Accept: application/json
     Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
 
-##### response:
+##4.1.2.1.2 response:
 
     HTTP/1.1 200 OK
     Content-Type: application/json
@@ -82,6 +83,6 @@ Method:    `GET`
       }
     }
 
-##### Possible other HTTP status codes
+##4.1.2.1.3 Possible other HTTP status codes
  * `404 Not Found`
  * `401 Unauthorized`
