@@ -20,7 +20,7 @@ JavaScript property name: `token` <br/>
 JavaScript type: `string`
 
 ##3.2.3 Description (recommended)
-Description of your order or orderlines. 
+Description of your order or orderlines.
 Will be presented on the invoice if end user chooses to pay with invoice.
 
 Default property: `null` <br/>
@@ -46,7 +46,7 @@ JavaScript property name: `orderId` <br/>
 JavaScript type: `string`
 
 ##3.2.6 Requires digital address
-If set to true, the users email will be made available through the [backend APIs](../address) after the checkout process is completed.
+If set to true, the users email will be made available through the [backend APIs](address) after the checkout process is completed.
 
 Default property: `false` <br/>
 HTML attribute name: `data-pxc-requires-digital-address` <br/>
@@ -54,7 +54,7 @@ JavaScript property name: `requiresDigitalAddress` <br/>
 JavaScript type: `boolean`
 
 ##3.2.7 Requires physical address
-If set to true, PayEx Checkout will acquire the user's physical delivery address in the checkout process. After the checkout process if completed the address will be made available through the [backend APIs.](../address)
+If set to true, PayEx Checkout will acquire the user's physical delivery address in the checkout process. After the checkout process if completed the address will be made available through the [backend APIs.](address)
 
 Default property: `false` <br/>
 HTML attribute name: `data-pxc-requires-physical-address` <br/>

@@ -29,7 +29,6 @@ The uri of this resource is the base uri to request all other resources related 
     * the amount that has been cancelled on the payment.
     * This amount is released from `reserved`    
  * **currency**    
-    * see [transaction currency](../transaction/#currency)    
     * `NOK` or `SEK`
     * the currency used for this `payment`
  * **transactions**
