@@ -1,42 +1,33 @@
 #3.1 Getting started
-##3.1.1 Adding the script
+##3.1 Adding the script
 Start by adding the PayEx Checkout script to your page.
 ```JavaScript
 <script src="https://checkout.okb.no/Content/js/payex-checkout.min.js"></script>
 ```
-##3.1.2 Initial configuration single orderline
 
-## 2. Initial configuration
-Choose the button of your liking that you want to start the checkout process with, and disable it - the PayEx Checkout javascript will enable it when it is properly loaded.
+## 3.1 Initial configuration
+Choose the button that you want to start the checkout process and add the id `pxc-button`. Then add the disable attribute - the PayEx Checkout JavaScript will enable it when it is properly loaded.
 ```HTML
-<button disabled>Pay</button>
+<button id="pxc-button" disabled>Pay</button>
 ```
-Now you have 2 options; either configure PayEx Checkout with JavaScript or HTML attributes. The choice is up to you and what you feel work best with your solution, however if you have an application that is heavily dependent on JavaScript, we recommend that you use the JavaScript configuration,
-because it gives you more control when and where PayEx Checkout is configured.
 
-*Please note that mixing both JavaScript and HTML attributes configurations won't work.*
+To configure PayEx Checkout you need to initialize it through the pxc.config function and pass in an configuration object with your API token, amount, order id and order lines.
+<br/>Make sure you include this configuration after the PayEx Checkout script you included in the previous step.
 
-###3.1.2.1 Configuration with JavaScript
-To configure PayEx Checkout with JavaScript use the pxc.config function and pass in an object with your API token and amount. Make sure you include this configuration after the PayEx Checkout script you included in the previous step.
 ```JavaScript
 pxc.config({
-	orderId: your_orderId,
-	description: your_description,
-    amount: your_amount,
-    token: "your_api_token"
+  amount: your_amount,
+	token: "your_api_token"
+	orderId: "your_orderId",
+	orderLines: [{
+		itemPrice: your_item_price,
+		description: "your_item_description",
+		quantity:  your_item_price
+	}]
 });
 ```
+
 Now add the id to the pxc-button to the button chosen earlier.
 ```HTML
 <button id="pxc-button" disabled>Pay</button>
 ```
-###3.1.2.2 Configuration with html attributes
-To configure the application with HTML attributes start by adding
-```HTML
-    <button data-pxc data-pxc-orderId="your_orderId" data-pxc-description="your_description" data-pxc-amount="your_amount" data-pxc-token="your_api_token">Pay</button>
-```
-You should now be able to make a purchase with PayEx checkout, if you have any question please don't hesitate to contact us on drift@okb.no. For further options please continue to the configuration reference section below.
-
-##3.1.3 Initial configuration several orderlines
-
-Implemented during week 15.
