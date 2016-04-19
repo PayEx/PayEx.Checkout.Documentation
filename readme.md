@@ -1,4 +1,4 @@
-# Payex Checkout Documentation
+# PayEx Checkout Documentation
 
 This repository contains the source code for [the documentation of PayEx Checkout](http://payex-checkout.readthedocs.org/).
 
