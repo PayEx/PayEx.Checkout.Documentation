@@ -16,3 +16,4 @@ pages :
   - 4.1 Payment: payment.md
   - 4.2 Address : address.md
   - 4.3 Transaction : transaction.md
+- 5. Callbacks : callbacks.md
