@@ -1,7 +1,10 @@
 #3.1 Getting started
+
+PayEx Checkout consists of two parts: A frontend and a backend. Both parts need to be implemented. Let's deal with the frontend first.
+
 ##3.1 Adding the script
 Start by adding the PayEx Checkout script to your page.
-```JavaScript
+```html
 <script src="https://checkout.okb.no/Content/js/payex-checkout.min.js"></script>
 ```
 
