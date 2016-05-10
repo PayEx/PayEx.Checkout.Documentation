@@ -2,13 +2,13 @@
 
 PayEx Checkout consists of two parts: A frontend and a backend. Both parts need to be implemented. Let's deal with the frontend first.
 
-# 3.2 Adding the script
+## 3.1.1 Adding the script
 Start by adding the PayEx Checkout script to your page.
 ```html
 <script src="https://checkout.okb.no/Content/js/payex-checkout.min.js"></script>
 ```
 
-## 3.3 Initial configuration
+## 3.1.2 Initial configuration
 Choose the button that you want to start the checkout process and add the id `pxc-button`. Then add the disable attribute - the PayEx Checkout JavaScript will enable it when it is properly loaded.
 ```HTML
 <button id="pxc-button" disabled>Pay</button>
