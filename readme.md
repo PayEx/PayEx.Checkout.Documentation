@@ -10,7 +10,7 @@ This repository contains the source code for [the documentation of PayEx Checkou
 
 
 ## How to contribute:
-The easiest way is to navigate to the file you want to edit in the [docs](docs) directory and edit it directly here on GitHub. If you want to do more extensive editing such as adding an entirely new file, you can, instead:
+The easiest way to contribute is to navigate to the file you want to edit in the [docs](docs) directory and edit it directly here on GitHub. If you want to do more extensive editing such as adding an entirely new file, you can, instead:
 
 * [Fork](https://guides.github.com/activities/forking/) this repository
 * Contribute new `.md` files, or update existing ones following the [MkDocs](http://www.mkdocs.org/user-guide/writing-your-docs/#writing-your-docs) style.
