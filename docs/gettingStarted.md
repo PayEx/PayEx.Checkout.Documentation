@@ -20,7 +20,7 @@ To configure PayEx Checkout you need to initialize it through the pxc.config fun
 ```JavaScript
 pxc.config({
   amount: your_amount,
-	token: "your_api_token"
+	token: "your_api_token",
 	orderId: "your_orderId",
 	orderLines: [{
 		itemPrice: your_item_price,
