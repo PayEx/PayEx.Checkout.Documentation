@@ -28,7 +28,7 @@ The easiest way to contribute is to navigate to the file you want to edit in the
 
 ### With Vagrant
 * Install [Vagrant](https://www.vagrantup.com/) and use `vagrant up` in the root directory.
-This boots up a VM, gets the needed dependencies (listed in the native step below) and maps the VMs `/vagrant` to the root of the repository
+This boots up a VM, gets the needed dependencies (listed in the native step below) and maps the virtual machine's `/vagrant` directory to the root of the repository.
 * `vagrant ssh`
 * `cd /vagrant/docs`
 * `mkdocs build`
