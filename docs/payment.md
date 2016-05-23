@@ -39,7 +39,6 @@ The uri of this resource is the base uri to request all other resources related 
     * if the initial order is initiated with [requires-physical-address](configurationReference/#requires-physical-address) and is paid with invoice, any shipping MUST be delivered to this address.
 
 
-
 ##4.1.2 Resource URI
 Resource:  `/payments/{paymentId}`, Where `paymentId` is the token recieved from the paymentsession through checkout.js
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
@@ -89,3 +88,74 @@ Content-Type: application/json
 ##4.1.2.1.3 Possible other HTTP status codes
  * `404 Not Found`
  * `401 Unauthorized`
+
+##4.1.3.1.1 Query
+ The api allows to query for a `payment` using the shop's [OrderId](configurationreference/#324-order-id-required)
+ It returns a list of all payments with that `orderId`.
+
+
+```HTTP
+GET scheme://host.tld/payments?orderid=the_order_id HTTP/1.1
+```
+
+##4.1.3.1.2 Response
+
+```HTTP
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb",
+    "originalAmount": 199,
+    "reserved": 0,
+    "captured": 199,
+    "credited": 0,
+    "cancelled": 0,
+    "currency": "NOK",  
+    "transactions": [
+    {
+      "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+      "currency": "NOK",
+      "amount": 199,
+      "type": "Authorize"
+    },
+    {
+      "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450402",
+      "currency": "NOK",
+      "amount": 199,
+      "type": "Capture"
+    }
+    ],
+    "address": {
+    "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address"
+    }
+  },
+  {
+    "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb",
+    "originalAmount": 199,
+    "reserved": 0,
+    "captured": 199,
+    "credited": 0,
+    "cancelled": 0,
+    "currency": "NOK",  
+    "transactions": [
+    {
+      "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+      "currency": "NOK",
+      "amount": 199,
+      "type": "Authorize"
+    },
+    {
+      "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450402",
+      "currency": "NOK",
+      "amount": 199,
+      "type": "Capture"
+    }
+    ],
+    "address": {
+    "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address"
+    }
+  }
+]
+```
