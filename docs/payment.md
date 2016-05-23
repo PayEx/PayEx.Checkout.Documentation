@@ -69,13 +69,11 @@ Content-Type: application/json
   "transactions": [
   {
     "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
-    "currency": "NOK",
     "amount": 199,
     "type": "Authorize"
   },
   {
     "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450402",
-    "currency": "NOK",
     "amount": 199,
     "type": "Capture"
   }
@@ -116,13 +114,11 @@ Content-Type: application/json
     "transactions": [
     {
       "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
-      "currency": "NOK",
       "amount": 199,
       "type": "Authorize"
     },
     {
       "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450402",
-      "currency": "NOK",
       "amount": 199,
       "type": "Capture"
     }
@@ -142,13 +138,11 @@ Content-Type: application/json
     "transactions": [
     {
       "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
-      "currency": "NOK",
       "amount": 199,
       "type": "Authorize"
     },
     {
       "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450402",
-      "currency": "NOK",
       "amount": 199,
       "type": "Capture"
     }
