@@ -50,7 +50,7 @@ Method:    `GET`
 
 ##4.1.2.1.1 Example request
 ```HTTP
-GET scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb HTTP/1.1
+GET scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb HTTP/1.1
 Accept: application/json
 Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
 ```
@@ -60,7 +60,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {
-  "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb",
+  "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb",
   "originalAmount": 199,
   "reserved": 0,
   "captured": 199,
@@ -69,20 +69,20 @@ Content-Type: application/json
   "currency": "NOK",  
   "transactions": [
   {
-    "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+    "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
     "currency": "NOK",
     "amount": 199,
     "type": "Authorize"
   },
   {
-    "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450402",
+    "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450402",
     "currency": "NOK",
     "amount": 199,
     "type": "Capture"
   }
   ],
   "address": {
-  "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address"
+  "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address"
   }
 }
 ```

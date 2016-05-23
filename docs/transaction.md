@@ -42,7 +42,7 @@ Method:    `POST`
 ####4.5.2.1 Request
 
 ```HTTP
-POST scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/ HTTP/1.1
+POST scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/ HTTP/1.1
 Accept: application/json
 Content-Type: application/json
 Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
@@ -58,7 +58,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {    
-  "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+  "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
   "amount": 199,
   "type": "Capture"  
 }
@@ -78,7 +78,7 @@ Method:    `GET`
 ##4.10 Example request and response
 ##4.10.1 Request
 ```HTTP
-GET scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400 HTTP/1.1
+GET scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400 HTTP/1.1
 Accept: application/json
 Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
 ```
@@ -88,7 +88,7 @@ HTTP/1.1 200 OK
 Content-Type: application/json
 
 {    
-  "uri": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
+  "uri": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400",
   "amount": 199,
   "type": "Authorize"  
 }

@@ -20,7 +20,7 @@ POST scheme://your.defined.host/and-path/for-recieving HTTP/1.1
 Content-Type: application/json
 
 {  
-  "payment": "scheme://host.tld/api/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400"  
+  "payment": "scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/transactions/9450400"  
 }
 ```
 
