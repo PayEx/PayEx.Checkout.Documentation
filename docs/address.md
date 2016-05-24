@@ -12,7 +12,7 @@ if the initial order is initiated with [requires-physical-address](configuration
 
 
 ##4.2.2 Resource URI
-Resource:  `/payments/{paymentId}/address/`, Where `paymentId` is the token recieved from the paymentsession through checkout.js.
+Resource:  `/payments/{paymentId}/address/`, Where `paymentId` is the paymant-id recieved from the payment session through checkout.min.js.
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
 ##4.2.2.1 Supported HTTP Verbs
@@ -22,7 +22,7 @@ Method:    `GET`
 ```HTTP
 GET scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address HTTP/1.1
 Accept: application/json
-Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
+Authorization: Token mybackendkeythatyoumustneverspillontotheinternet==
 ```
 ##4.2.2.1.2 response:
 ```HTTP

@@ -5,7 +5,7 @@
   buttonSelector: "#pxc-button",
   orderId: null,
   amount: null,
-  token: null,
+  key: null,
   requiresDigitalAddress: false,
   requiresPhysicalAddress: false,
   orderLines: []
@@ -20,10 +20,10 @@ JavaScript property name: `amount` <br/>
 JavaScript type: `number`
 
 ##3.2.3 API Token (required)
-In order to authenticate your solution with PayEx Checkout you will need an API token, this token can be found in the PayEx Checkout admin user interface.
+In order to authenticate your solution with PayEx Checkout you will need a frontend key, this key can be found in the [PayEx Checkout admin](gettingStarted#authentication-keys) user interface.
 
 Default property: `null` <br/>
-JavaScript property name: `token` <br/>
+JavaScript property name: `key` <br/>
 JavaScript type: `string`
 
 ##3.2.4 Order Id (required)

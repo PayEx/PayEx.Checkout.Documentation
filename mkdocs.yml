@@ -11,10 +11,10 @@ pages :
 - Home : index.md
 - Requirements : requirements.md
 - Getting started : gettingStarted.md
-- Authentication : authentication.md
 - Frontend :
   - Configuration reference : configurationReference.md
-- Backend :
+- API : api.md
+- API Reference :
   - Payment: payment.md
   - Address : address.md
   - Transaction : transaction.md

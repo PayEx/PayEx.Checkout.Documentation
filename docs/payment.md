@@ -40,7 +40,7 @@ The uri of this resource is the base uri to request all other resources related 
 
 
 ##4.1.2 Resource URI
-Resource:  `/payments/{paymentId}`, Where `paymentId` is the token recieved from the paymentsession through checkout.js
+Resource:  `/payments/{paymentId}`, Where `paymentId` is the `payment-id` recieved from the paymentsession through checkout.js
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
 ##4.1.2.1 Supported HTTP Verbs
@@ -51,7 +51,7 @@ Method:    `GET`
 ```HTTP
 GET scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb HTTP/1.1
 Accept: application/json
-Authorization: Token secretencodedtokenthatyoumustneverspillontotheinternet==
+Authorization: Token mybackendkeythatyoumustneverspillontotheinternet==
 ```
 ##4.1.2.1.2 response:
 ```HTTP
@@ -88,7 +88,7 @@ Content-Type: application/json
  * `401 Unauthorized`
 
 ##4.1.3.1.1 Query
- The api allows to query for a `payment` using the shop's [OrderId](configurationreference/#324-order-id-required)
+ The api allows to query for a `payment` using the shop's [orderId](configurationreference/#324-order-id-required)
  It returns a list of all payments with that `orderId`.
 
 
