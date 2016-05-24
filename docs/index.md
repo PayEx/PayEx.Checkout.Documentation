@@ -1,8 +1,8 @@
-#1. Welcome to PayEx Checkout
+#Welcome to PayEx Checkout
 
 **This service is in private beta and currently not available to the general public.**
 
-## 1.1 Join the conversation
+##Join the conversation
 
 If you're not frightened by the above disclaimer and would like to ask concrete developer related questions about PayEx Checkout, please join our [Gitter channel](https://gitter.im/PayEx/Checkout.Documentation).
 

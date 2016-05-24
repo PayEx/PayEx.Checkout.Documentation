@@ -1,10 +1,10 @@
-#4.1 The payment resource.
+#The payment resource.
 An implementer may request this resource to obtain the root resource describing a payment.
 All other resources related to the payment are found on the resource itself or linked to from this resource.
 
 The uri of this resource is the base uri to request all other resources related to the payment.
 
-##4.1.1 Properties of payment
+##Properties of payment
  * **uri**
     * the uri to this one resource.
  * **originalAmount**
@@ -39,21 +39,21 @@ The uri of this resource is the base uri to request all other resources related 
     * if the initial order is initiated with [requires-physical-address](configurationReference/#requires-physical-address) and is paid with invoice, any shipping MUST be delivered to this address.
 
 
-##4.1.2 Resource URI
+##Resource URI
 Resource:  `/payments/{paymentId}`, Where `paymentId` is the `payment-id` recieved from the paymentsession through checkout.js
 This resource requires authentication, authorizing the owner of the payment. see [Authentication](authentication/#back-end-authentication)
 
-##4.1.2.1 Supported HTTP Verbs
+##Supported HTTP Verbs
 Method:    `GET`
 
 
-##4.1.2.1.1 Example request
+##Example request
 ```HTTP
 GET scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb HTTP/1.1
 Accept: application/json
 Authorization: Token mybackendkeythatyoumustneverspillontotheinternet==
 ```
-##4.1.2.1.2 response:
+##response:
 ```HTTP
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -83,12 +83,12 @@ Content-Type: application/json
   }
 }
 ```
-##4.1.2.1.3 Possible other HTTP status codes
+##Possible other HTTP status codes
  * `404 Not Found`
  * `401 Unauthorized`
 
-##4.1.3.1.1 Query
- The api allows to query for a `payment` using the shop's [orderId](configurationreference/#324-order-id-required)
+##Query
+ The api allows to query for a `payment` using the shop's [orderId](configurationreference/#order-id-required)
  It returns a list of all payments with that `orderId`.
 
 
@@ -96,7 +96,7 @@ Content-Type: application/json
 GET scheme://host.tld/payments?orderid=the_order_id HTTP/1.1
 ```
 
-##4.1.3.1.2 Response
+##Response
 
 ```HTTP
 HTTP/1.1 200 OK

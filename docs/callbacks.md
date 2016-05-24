@@ -1,17 +1,17 @@
-#5 Callbacks
+#Callbacks
 PayEx Checkout emits callbacks on all events happening to a [payment](payment) asynchronously. These callbacks can be used to upate the implementers back end systems, send receipts, or any other task related to a change in a payments' status.
 
 Events like
 
- * [Cancel](transaction/#441-cancel)
- * [Capture](transaction/#442-capture)
- * [Credit](transaction/#443-credit)
- * [Authorize](transaction/#444-authorize)
+ * [Cancel](transaction/#cancel)
+ * [Capture](transaction/#capture)
+ * [Credit](transaction/#credit)
+ * [Authorize](transaction/#authorize)
 
-#5.1 Implementation details
+#Implementation details
 
 The implementer registers the callback-url it want to recieve the callback `POST`-requests.
-That resource contains one element, `payment` which is the url to the affected payment, as described in [Payment Example request](payment/#41211-example-request)
+That resource contains one element, `payment` which is the url to the affected payment, as described in [Payment Example request](payment/#example-request)
 
 A callback looks like this:
 
