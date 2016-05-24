@@ -6,6 +6,7 @@ site_favicon : favicon.png
 # TODO site_description: modern payment solution
 site_author : PayEx Team User Experience #TODO change
 copyright : Copyright © PayEx. All Rights Reserved.
+
 pages :
 - Home : index.md
 - Requirements : requirements.md
