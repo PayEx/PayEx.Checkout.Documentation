@@ -15,8 +15,6 @@ In _Merchant Profile_: edit the configuration with the following settings:
 * **Callback method** : `Url`
 * **Transaction callback URL/Mail** : `http://callback-hub.test.storefront.no/`
 
-PLACEHOLDER PICTURE
-
 Get the _encryption key_, either by creating a new one, or by obtaining the existing one (not possible in the admin), we need this, and the _Merchant account_(number) later
 
 ----

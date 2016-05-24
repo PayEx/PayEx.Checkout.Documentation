@@ -13,9 +13,9 @@ pages :
 - Getting started : gettingStarted.md
 - Frontend :
   - Configuration reference : configurationReference.md
-- API : api.md
-- API Reference :
-  - Payment: payment.md
+- API :
+  - Overview : api.md
+  - Payment : payment.md
   - Address : address.md
   - Transaction : transaction.md
 - Callbacks : callbacks.md
