@@ -114,6 +114,9 @@ using cURL or other http libraries, construct and send a [Capture](transaction#c
 
 ### Example
 
+C#6 .NET 4.5.1++</br>
+Using Newtonsoft.Json for serializing.
+
 ```csharp
 string payment_id = HttpContext.Current.Request.Form["payment-id"];
 string backend_key = "mysupersecretbackendkey";
