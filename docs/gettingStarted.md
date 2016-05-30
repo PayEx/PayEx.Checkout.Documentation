@@ -1,5 +1,8 @@
 # Getting started
 
+##Sequence
+![Screenshot](img/sequence_diagram.png)
+
 ##For the test environment:
 
 ### PayEx Admin
