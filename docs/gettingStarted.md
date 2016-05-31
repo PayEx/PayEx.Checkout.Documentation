@@ -1,8 +1,5 @@
 # Getting started
 
-##Sequence
-![Screenshot](img/sequence_diagram.png)
-
 ##For the test environment:
 
 ### PayEx Admin
@@ -94,7 +91,7 @@ pxc.config({
 	orderLines: [{
 		itemPrice: your_item_price,
 		description: "your_item_description",
-		quantity:  your_item_price
+		quantity:  your_item_quantity
 	}]
 });
 ```
@@ -147,12 +144,15 @@ You may now test.
 
 ##Checklist
 
-1. SSL installed on your site
+![Screenshot](img/sequence_diagram.png)
+
+Before you go live you need to install a SSL certificate on your site and;
+
 1. Init order via Checkout with form action url
-1. Save `payment-id` to your backend (appended to form on return from an authorized order from checkout)
-1. Verify that you have implemented order amount check functionality via `payment-id` on the payment resource to ensure that the payment form has not been tampered with
-1. Verify that you have implemented capture-transaction functionality to ensure economic settlement on the ordered amount
-1. Verify that you have implemented credit and cancel-transaction functionality to ensure that the value chain is ok
+2. Save `payment-id` to your backend (appended to form on return from an authorized order from checkout)
+3. Verify that you have implemented order amount check functionality via `payment-id` on the payment resource to ensure that the payment form has not been tampered with
+4. Verify that you have implemented capture, credit and cancel-transaction functionality to ensure economic settlement on the ordered amount and a sound value chain
+
 
 Change your URLs and credentials to production values
 
