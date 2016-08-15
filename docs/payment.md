@@ -47,13 +47,15 @@ This resource requires authentication, authorizing the owner of the payment. see
 Method:    `GET`
 
 
-##Example request
+##Example
+
+###Request
 ```HTTP
 GET scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb HTTP/1.1
 Accept: application/json
 Authorization: Token mybackendkeythatyoumustneverspillontotheinternet==
 ```
-##response:
+###Response:
 ```HTTP
 HTTP/1.1 200 OK
 Content-Type: application/json
@@ -91,12 +93,13 @@ Content-Type: application/json
  The api allows to query for a `payment` using the shop's [orderId](configurationreference/#order-id-required)
  It returns a list of all payments with that `orderId`.
 
+###Request
 
 ```HTTP
 GET scheme://host.tld/payments?orderid=the_order_id HTTP/1.1
 ```
 
-##Response
+###Response
 
 ```HTTP
 HTTP/1.1 200 OK

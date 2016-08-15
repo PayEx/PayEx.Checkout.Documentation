@@ -18,7 +18,7 @@ With SSL </br>
 
 ## Authentication
 
-The authentication for the api uses the [backend-key](gettingStarted#authentication).
+The authentication for the api uses the [backend-key](credentials#authentication).
 This key is sendt as a HTTP `Authorization`-header like this:
 
 ```HTTP

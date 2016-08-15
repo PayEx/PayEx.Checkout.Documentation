@@ -20,7 +20,7 @@ JavaScript property name: `amount` <br/>
 JavaScript type: `number`
 
 ##API Token (required)
-In order to authenticate your solution with PayEx Checkout you will need a frontend key, this key can be found in the [PayEx Checkout admin](gettingStarted#authentication-keys) user interface.
+In order to authenticate your solution with PayEx Checkout you will need a frontend key, this key can be found in the [PayEx Checkout admin](credentials#authentication-keys) user interface.
 
 Default property: `null` <br/>
 JavaScript property name: `key` <br/>

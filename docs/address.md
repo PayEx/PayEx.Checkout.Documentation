@@ -18,13 +18,15 @@ This resource requires authentication, authorizing the owner of the payment. see
 ##Supported HTTP Verbs
 Method:    `GET`
 
-##Example request
+##Example
+
+###Request
 ```HTTP
 GET scheme://host.tld/payments/94ac4cde-5cb1-4609-938d-8c510bcef1bb/address HTTP/1.1
 Accept: application/json
 Authorization: Token mybackendkeythatyoumustneverspillontotheinternet==
 ```
-##response:
+###Response:
 ```HTTP
 HTTP/1.1 200 OK
 Content-Type: application/json
