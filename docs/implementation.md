@@ -1,5 +1,6 @@
 #Implementation
-There are two areas that your shop must have integration to PayEx Checkout, frontend and backend.
+There are two areas that your shop must have integration to PayEx Checkout, frontend and backend. 
+PayEx Checkout is a two-step payment flow. First you authorize the payment with the frontend and then you will be able to capture, cancel or credit the payment from your backend.
 
 In order to start implementing, you need to obtain a set of credentials. If you allready have the frontend and backend keys, you are good to go - otherwise go to the [credentials](credentials) section to get information of how to get hold of your set of keys.
 
@@ -58,7 +59,7 @@ pxc.config({
 
 When the payment process completes successfully, a hidden input element with a `payment-id` will be injected to the form and sent alongside any other input elements as normal to the defined form-action.
 
-A successful request requires that the _Referer_ Header matches the one entered in the [shop settings](#shop-settings). This headers' inclusion is taken care of by the checkout-script.
+A successful request requires that the _Referer_ Header matches the one entered in the [shop settings](credentials#shop-settings). This headers' inclusion is taken care of by the checkout-script.
 
 If a consumer fails to complete the payment process, e.g.
  
@@ -71,7 +72,7 @@ or similar, we will at this moment not notify you about this.
 ## Backend
 After a successful payment, the shops web server receives the `payment-id` from the form-post. This ID is the key to actually capturing the now authorized payment.
 To do this you have to implement a server side http request.
-All requests to the [API](api) uses authentication.
+All requests to the [API](backend) uses authentication.
 using cURL or other http libraries, construct and send a [Capture](transaction#capture) request to the url:
 
 * HTTPS : <https://checkout-api.staging.okb.no/payments/YOUR PAYMENT-ID/transactions>
@@ -114,6 +115,19 @@ Creditcard|[testdata](http://www.payexpim.com/test-data/test-purchase-data/)
 Invoice (Norwegian)| [testdata](http://www.payexpim.com/test-data/test-data-for-payex-faktura-no/)
 Invoice (Sweden)| [testdata](http://www.payexpim.com/test-data/payex-invoice-2-0-test-data/)
 
-##URLS
+##Useful URLs
 
-Link til urler i test og produksjon, samt go live procedure
+###Test URLs
+
+Type|Url
+----|---
+Frontend JS | <https://checkout.staging.okb.no/Content/js/payex-checkout.min.js>
+Backend API | <https://checkout-api.staging.okb.no/>
+
+###Production URLs
+Type|Url
+----|---
+Frontend JS | <https://checkout.okb.no/Content/js/payex-checkout.min.js>
+Backend API | <https://checkout-api.okb.no/>
+
+The go live procedure is located [here](goliveprocedure)

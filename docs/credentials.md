@@ -1,4 +1,4 @@
-#Test environment
+#Credentials
 
 ##PayEx Admin
 To start implementing, there are a few things that must be done to the PayEx Merchant Account that is going to be used with PayEx Checkout.
@@ -45,5 +45,5 @@ After they are generated, they can not be retrieved, so store them somewhere saf
 
 * **Frontend-key**: Your publishable key, this key is visible in the source of the shop. If the **Shop base url** is changed, the _frontend-key_ **MUST** be regenerated.
 
-* **Backend-key**: Your secret server to server key. Used for [authenticating your](api#backend-authentication) back end requests to the [Checkout Api](api)
+* **Backend-key**: Your secret server to server key. Used for [authenticating your](backend#backend-authentication) back end requests to the [Checkout Api](backend)
 

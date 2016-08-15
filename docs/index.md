@@ -36,6 +36,6 @@ One can summarize the solution in three steps:
 2. You send us the order and customer to the pop-up window, to be returned once the payment process is completed
 3. You notify us that the order has been shipped, and we transfer the money to your bank account
 
-Sometimes a summary simply will not cut it. To get better acquainted with the process, head over to the [getting started](gettingStarted) section.
+Sometimes a summary simply will not cut it. To get better acquainted with the process, head over to the [getting started](implementation) section.
 
 
