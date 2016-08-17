@@ -1,5 +1,6 @@
 site_name : PayEx Checkout
 theme : readthedocs
+theme_dir : 'custom_search'
 repo_url : https://github.com/PayEx/PayEx.Checkout.Documentation
 # TODO site_url: https://checkout.payex.com
 # TODO site_description: modern payment solution
