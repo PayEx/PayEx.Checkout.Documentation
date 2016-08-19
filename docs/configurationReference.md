@@ -59,7 +59,7 @@ JavaScript type: `number`
 Sets vat rate for the order line.
 
 Default property: 25 <br/>
-JavaScript property name: `itemPrice` <br/>
+JavaScript property name: `vatRate` <br/>
 JavaScript type: `number`
 
 ###Example
