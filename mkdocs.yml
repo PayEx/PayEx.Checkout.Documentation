@@ -17,10 +17,10 @@ pages :
   - Go live procedure : goLiveProcedure.md
 - Frontend API :
   - Configuration reference : configurationReference.md
+  - Multiple configurations : multipleConfigurations.md
 - Backend API:
   - Overview : backend.md
   - Payment : payment.md
   - Address : address.md
   - Transaction : transaction.md
   - Callbacks: callbacks.md
-

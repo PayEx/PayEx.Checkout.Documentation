@@ -98,7 +98,7 @@ JavaScript property name: `requiresPhysicalAddress` <br/>
 JavaScript type: `boolean`
 
 ##Button Selector
-Changes the selector that PayEx use to find the button that start the checkout process. Please note that the selector provide must be supported by the [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector).
+Changes the selector that PayEx use to find the button that start the checkout process. Please note that the selector provide must be supported by the [Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector). Please note that the button selector is required if there is multiple configurations on the same page.
 
 Default property: `"#pxc-button"` <br/>
 JavaScript property name: `buttonSelector` <br/>
