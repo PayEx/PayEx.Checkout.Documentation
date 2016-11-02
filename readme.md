@@ -1,7 +1,7 @@
 # PayEx Checkout Documentation
 
 [![Join the chat at https://gitter.im/PayEx/Checkout.Documentation](https://badges.gitter.im/PayEx/Checkout.Documentation.svg)](https://gitter.im/PayEx/Checkout.Documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![read the docs build](https://readthedocs.org/projects/payex-checkout/badge/?version=latest)](http://payex-checkout.readthedocs.io/en/latest/)
+[![read the docs build](https://readthedocs.org/projects/payex-checkout/badge/?version=latest)](http://payex-checkout.readthedocs.io/)
 [![Build Status](https://travis-ci.org/PayEx/PayEx.Checkout.Documentation.svg?branch=master)](https://travis-ci.org/PayEx/PayEx.Checkout.Documentation)
 
 This repository contains the source code for [the documentation of PayEx Checkout](http://payex-checkout.readthedocs.io/en/latest/).
