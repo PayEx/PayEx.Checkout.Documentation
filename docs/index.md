@@ -1,5 +1,8 @@
 # Introduction to PayEx Checkout
+
 **Note! This service is in private beta and currently not available to the general public.**
+
+[![Join the chat at https://gitter.im/PayEx/Checkout.Documentation](https://badges.gitter.im/PayEx/Checkout.Documentation.svg)](https://gitter.im/PayEx/Checkout.Documentation?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) 
 
 #What is PayEx Checkout?
 PayEx Checkout is our simplest solution to enable payments on your website. PayEx Checkout is a cross-browser and cross-device supported solution for any device a potential consumer might be using. We will in simple steps explain how to integrate the website, with an embedded secure payment form and how to complete your orders from the backend server. 
