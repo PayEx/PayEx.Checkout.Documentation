@@ -1,6 +1,5 @@
 site_name : PayEx Checkout
 theme : readthedocs
-theme_dir : 'custom_search'
 repo_url : https://github.com/PayEx/PayEx.Checkout.Documentation
 # TODO site_url: https://checkout.payex.com
 # TODO site_description: modern payment solution
@@ -10,17 +9,3 @@ site_favicon : img/favicon.png
 
 pages :
 - Home : index.md
-- Get in touch : getInTouch.md
-- Getting started :
-  - Implementation: implementation.md
-  - Credentials : credentials.md
-  - Go live procedure : goLiveProcedure.md
-- Frontend API :
-  - Configuration reference : configurationReference.md
-  - Multiple configurations : multipleConfigurations.md
-- Backend API:
-  - Overview : backend.md
-  - Payment : payment.md
-  - Address : address.md
-  - Transaction : transaction.md
-  - Callbacks: callbacks.md
